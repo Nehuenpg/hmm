@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/nehuengasparini/Documents/cursoPy/UBA-BioInformatica/mod4/protoglobin_seed_model.hmm
+# target sequence database:        /Users/nehuengasparini/Documents/cursoPy/UBA-BioInformatica/mod4/registro_modificados_globinas_pfam.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       protoglobin_seed_msa  [M=158]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     0.0011   16.9   0.3     0.0053   14.7   0.3    1.9  1  V5N4H6/40-159      
+     0.0061   14.5   0.0     0.0068   14.3   0.0    1.2  1  A0A2B4SPY0/44-162  
+  ------ inclusion threshold ------
+      0.018   13.0   0.1      0.027   12.4   0.1    1.3  1  H3B4U9/42-162      
+
+
+Domain annotation for each sequence (and alignments):
+>> V5N4H6/40-159  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.3   3.8e-06    0.0053      45     141 ..       9     113 ..       1     115 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 3.8e-06
+  protoglobin_seed_msa  45 lsfpetarifetrs............qierlkktlkayllelfsgp.ldeayveyrkkiGkmhvri.gleprwyiaayqlllellleal 119
+                           +sfp+t+++f++ +            q+++      + l++l++     e+ +  ++k++k h+r+ ++ep  +  + +++le+l+e +
+         V5N4H6/40-159   9 TSFPSTKQYFSEFRhmedtqemqssaQLQKHAVLVMKALNALVESVdDGEKTASVVEKVAKSHARKhKVEPVNFKILAGVILEVLVEVF 97 
+                           567777777777776666666666667777777777778888777636677888899*********99********************8 PP
+
+  protoglobin_seed_msa 120 lekeadkleelsalvkAlsKli 141
+                            e+        +++ +A+sKl+
+         V5N4H6/40-159  98 PESFG------VEAQRAWSKLM 113
+                           77763......56999999987 PP
+
+>> A0A2B4SPY0/44-162  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.0   4.8e-06    0.0068      75     141 ..      51     111 ..       5     116 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 4.8e-06
+  protoglobin_seed_msa  75 fsgpldeayveyrkkiGkmhvrigleprwyiaayqlllellleallekeadkleelsalvkAlsKli 141
+                              +  e++ +y++++G++h    l+p+++ ++ + l+ +l++ l+++ +++     ++  A++Kl+
+     A0A2B4SPY0/44-162  51 SALDDSESFSAYLEELGRRHKTRALKPMYLDSMQEALMFVLQDLLESS-WTE-----ETADAWNKLF 111
+                           555677899******************999888888888888887655.555.....5777777775 PP
+
+>> H3B4U9/42-162  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.1   1.9e-05     0.027      79     142 ..      49     114 ..       6     117 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.9e-05
+  protoglobin_seed_msa  79 ldeayveyrkkiGkmhvri........gleprwyiaayqlllellleallekeadkleelsalvkAlsKlin 142
+                              + ve ++ki+ + + +        ++ep ++  + +++le+l e  +++ +++      + kA++Kl+ 
+         H3B4U9/42-162  49 TVVENVEDQDKIASVLAPVgkahalkhKVEPVYFKILSGVILEILAEEYAQHFTPE------VQKAWTKLMS 114
+                           444555556666666655566666669*************************9877......8999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (158 nodes)
+Target sequences:                       4216  (485022 residues searched)
+Passed MSV filter:                       449  (0.106499); expected 84.3 (0.02)
+Passed bias filter:                      423  (0.100332); expected 84.3 (0.02)
+Passed Vit filter:                        35  (0.00830171); expected 4.2 (0.001)
+Passed Fwd filter:                         3  (0.000711575); expected 0.0 (1e-05)
+Initial search space (Z):               4216  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 3667.69
+//
+[ok]
